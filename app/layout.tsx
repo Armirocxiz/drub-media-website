@@ -1,0 +1,1 @@
+import type {Metadata} from "next";import "./globals.css";export const metadata:Metadata={title:"DRUB — Experiential. Creators. Production.",description:"Drub Media creates experiences, creator campaigns and production for brands in the UAE."};export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
