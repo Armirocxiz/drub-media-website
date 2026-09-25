@@ -1,7 +1,8 @@
 "use client";
 import {useEffect,useRef,useState} from "react";
 const talent="https://drub-creator-vault.vercel.app/creators",join="https://drub-creator-vault.vercel.app/join";
-const slides=[
+type Slide={k:string;type:string;title:string;sub:string;cta:string;href:string;media?:string;fit?:string;talent?:boolean;tone?:string};
+const slides:Slide[]=[
  {k:"01",type:"DRUB / SHOWREEL",title:"WE MAKE\nPEOPLE STOP.",sub:"Experiential. Creators. Production.",media:"/media/drub-brand.mp4",fit:"portrait",cta:"Enter Drub",href:"#"},
  {k:"02",type:"BEAUTY / EXPERIENTIAL",title:"PUT THE\nBRAND IN IT.",sub:"Live brand moments designed to become content.",media:"/media/beauty.mp4",cta:"Create an experience",href:"mailto:reachus@drubme.com"},
  {k:"03",type:"EVENT / BEAUTYWORLD",title:"BE WHERE\nIT HAPPENS.",sub:"On-ground energy captured for the feed.",media:"/media/damas-rose.mp4",fit:"portrait",cta:"Start a project",href:"mailto:reachus@drubme.com"},
